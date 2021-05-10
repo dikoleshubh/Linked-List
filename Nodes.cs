@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Linkedlist
 {
-    class Nodes
-    {
-    }
+    
+    public int data; // integer value store data
+    public Node next;
+    
+        public Node(int d)
+        {
+            data = d;
+            next = null;
+        }
 }
