@@ -40,6 +40,32 @@ namespace Linkedlist
             Console.WriteLine($"Inserted into front {new_node.data}"); 
 
         }
+        public void Append(int new_data)
+        {
+            Node new_node = new Node(new_data);// Allocate the Node & Put in the data
+
+            // If the Linked List is empty then make the new node as head 
+            if (head == null)
+            {
+                head = new Node(new_data);
+                return;
+            }
+
+            else
+            {
+                new_node.next = null; //New node will be assumed null
+
+                Node last = head; //Transversed head to end
+                while (last.next != null)
+                
+                    last = last.next;
+                
+
+                // . Change the next of last node 
+                last.next = new_node;
+                return;
+            }
+        }
 
         internal void Display()
         {

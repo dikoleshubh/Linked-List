@@ -15,11 +15,17 @@ namespace Linkedlist
 
             LinkedList list = new LinkedList(); //CREATING OBJECT OF LINKEDLIST CLASS
 
-            list.InsertFront(70); // Adding data in list //UC2
-            list.InsertFront(30);// Adding data in list //UC2
-            list.InsertFront(56);
+            //list.InsertFront(70); // Adding data in list //UC2
+            //list.InsertFront(30);// Adding data in list //UC2
+            //list.InsertFront(56);
 
-            Console.Read();
+            list.Append(56);// Adding data in list //UC3
+            list.Append(30);
+            list.Append(70);
+
+            list.Display();
+            Console.ReadLine();
+          
         }
     }
 }
