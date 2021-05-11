@@ -136,6 +136,19 @@ namespace Linkedlist
 
         }
 
+        //SEARCH SPECIFIC LEMENT IN LINKED LIST
+        public bool search( int x)
+        {
+            Node current = head; // Initialize current
+            while (current != null)
+            {
+                if (current.data == x)
+                    return true; // data found
+                current = current.next;
+            }
+            return false; // data not found
+        }
+
         internal void Display()
         {
             Node temp = this.head;
