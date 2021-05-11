@@ -23,7 +23,7 @@ namespace Linkedlist
             //list.Append(30);
             //list.Append(70);
             list.InsertAtParticularPosition(2, 30);//UC4
-
+            list.DeleteFirstNode(); //Delete data
             list.Display();
             Console.ReadLine();
           
