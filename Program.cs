@@ -25,7 +25,9 @@ namespace Linkedlist
             list.InsertAtParticularPosition(2, 30);//UC4
             list.DeleteFirstNode(); //Delete data
             list.search(12);
+            list.InsertAtAfterValue(30, 40);//UC8
             list.Display();
+       
             Console.ReadLine();
           
         }
