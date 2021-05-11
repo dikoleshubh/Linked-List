@@ -87,7 +87,7 @@ namespace Linkedlist
                     if (position == 1)
                     {
                         Node node = new Node(data);
-                        node.next = this.head.next;
+                        node.next = this.head.next;//
                         head.next = node;
                         break;
                     }
@@ -148,7 +148,33 @@ namespace Linkedlist
             }
             return false; // data not found
         }
+        public void InsertAtAfterValue(int after, int data)
+        {
 
+            if (head == null)
+            {
+                Console.WriteLine("Linked list is Empty");
+            }
+            else
+            {
+                Node temp = head;
+
+                while (temp != null)
+                {
+                    if (temp.data == after)
+                    {
+                        Node node = new Node(data);
+                        node.next = temp.next;//Make next of new Node as  next of prev_node
+                        temp.next = node;//ake next of prev node  as newnode
+                        break;
+                    }
+                    temp = temp.next;
+                }
+                Console.WriteLine($"Successfully added Element {after} After {data}");
+
+
+            }
+        }
         internal void Display()
         {
             Node temp = this.head;
