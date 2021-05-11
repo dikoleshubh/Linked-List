@@ -26,6 +26,7 @@ namespace Linkedlist
             list.DeleteFirstNode(); //Delete data
             list.search(12);
             list.InsertAtAfterValue(30, 40);//UC8
+            list.DeleteElement(40);//UC9
             list.Display();
        
             Console.ReadLine();

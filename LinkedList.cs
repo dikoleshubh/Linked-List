@@ -175,6 +175,23 @@ namespace Linkedlist
 
             }
         }
+
+        public int DeleteElement(int data)
+        {
+            Node temp = head;
+            int count = 1;
+           
+            while (temp.next != null)
+            {
+                if (temp.data == data)///CHECKING DATA PRESENT AT THE NODE
+                {
+                    temp.next = temp.next.next;///GOING AFTER NEXT NODE
+                }
+                temp = temp.next;
+                count++;
+            }
+            return count;
+        }
         internal void Display()
         {
             Node temp = this.head;
